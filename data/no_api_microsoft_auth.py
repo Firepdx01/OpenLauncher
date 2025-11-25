@@ -9,7 +9,7 @@ References:
 If you want to use your own Microsoft Entra app, copy this file to `data/microsoft_auth.py`
 and update CLIENT_ID and REDIRECT_URL accordingly.
 
-Note: OpenLauncher does not use this file by default; it's an example for custom app 
+Note: CommandLauncher does not use this file by default; it's an example for custom app 
 integration, we use our own API app in production for better control and security over the auth flow.
 """
 
@@ -136,7 +136,7 @@ class CallbackHandler(http.server.BaseHTTPRequestHandler):
                 self.send_header('Content-type', 'text/html')
                 self.end_headers()
                 try:
-                    redirect_url = 'https://openlauncher.codevbox.com/login-failed'  # Desired redirect URL after failed login
+                    redirect_url = 'https://commandlauncher.codevbox.com/login-failed'  # Desired redirect URL after failed login
                     # Send a 302 redirect to the desired location
                     self.send_response(302)
                     self.send_header('Location', redirect_url)
@@ -154,7 +154,7 @@ class CallbackHandler(http.server.BaseHTTPRequestHandler):
                     self.wfile.write(b'<html><body><h1>Login Failed</h1><p>You can close this window.</p></body></html>')
             else:
                 try:
-                    redirect_url = 'https://openlauncher.codevbox.com/login-success'  # Desired redirect URL after successful login
+                    redirect_url = 'https://commandlauncher.codevbox.com/login-success'  # Desired redirect URL after successful login
                     # Send a 302 redirect to the desired location
                     self.send_response(302)
                     self.send_header('Location', redirect_url)

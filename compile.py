@@ -64,13 +64,13 @@ executables = [
     Executable(
         script="data/main.py",
         base="Win32GUI",
-        target_name="OpenLauncher.exe",
+        target_name="CommandLauncher.exe",
         icon="data/img/icon.ico"
     )
 ]
 
 setup(
-    name="OpenLauncher",
+    name="CommandLauncher",
     version=f"{variables.version}",
     description="",
     options={

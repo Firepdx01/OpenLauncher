@@ -1,5 +1,5 @@
 """
-Window Methods for OpenLauncher
+Window Methods for CommandLauncher
 Contains installation and settings window methods
 """
 

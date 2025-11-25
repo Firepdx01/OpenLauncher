@@ -1,5 +1,5 @@
 """
-UI Dialogs for OpenLauncher
+UI Dialogs for CommandLauncher
 Contains installation dialogs and settings window
 """
 

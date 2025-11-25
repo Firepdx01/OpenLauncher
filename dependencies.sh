@@ -58,4 +58,4 @@ esac
 
 echo -e "${GREEN}Dependencies installed successfully!${NC}"
 echo -e "${BLUE}You can now compile the application using the compile-linux.sh script or download the pre-compiled binaries from the releases page.${NC}"
-echo -e "${BLUE}https://github.com/CesarGarza55/OpenLauncher/releases/latest${NC}"
+echo -e "${BLUE}https://github.com/CesarGarza55/CommandLauncher/releases/latest${NC}"

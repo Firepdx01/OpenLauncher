@@ -180,27 +180,27 @@ compile_application() {
         --add-data data/variables.py:. \
         --add-data data/version_installer.py:. \
         --add-data data/workers.py:. \
-        --name OpenLauncher.bin \
+        --name CommandLauncher.bin \
         data/main.py
 
     echo -e "${GREEN}Compilation finished! Cleaning up...${NC}"
-    rm OpenLauncher.bin.spec
+    rm CommandLauncher.bin.spec
     rm -rf temp
 }
 
 # Create .deb package (only for Debian-based systems)
 create_deb_package() {
     echo -e "${GREEN}Creating .deb package...${NC}"
-    mkdir -p compile-deb/usr/share/openlauncher
+    mkdir -p compile-deb/usr/share/commandlauncher
 
     # If the binary already exists, ask whether to use it or recreate
-    if [ -f "OpenLauncher.bin" ]; then
-        read -p "OpenLauncher.bin already exists. Use existing binary? [Y/n]: " use_existing
+    if [ -f "CommandLauncher.bin" ]; then
+        read -p "CommandLauncher.bin already exists. Use existing binary? [Y/n]: " use_existing
         # default to yes if empty, and make case-insensitive
         use_existing=${use_existing:-Y}
         use_existing=$(echo "$use_existing" | tr '[:upper:]' '[:lower:]')
         if [ "$use_existing" != "y" ]; then
-            echo -e "${YELLOW}Recreating OpenLauncher.bin...${NC}"
+            echo -e "${YELLOW}Recreating CommandLauncher.bin...${NC}"
             # Ensure virtualenv is active (create_venv is idempotent)
             create_venv
             if confirm_compile; then
@@ -210,10 +210,10 @@ create_deb_package() {
                 return 1
             fi
         else
-            echo -e "${GREEN}Using existing OpenLauncher.bin${NC}"
+            echo -e "${GREEN}Using existing CommandLauncher.bin${NC}"
         fi
     else
-        echo -e "${YELLOW}No existing OpenLauncher.bin found. Compiling...${NC}"
+        echo -e "${YELLOW}No existing CommandLauncher.bin found. Compiling...${NC}"
         create_venv
         if confirm_compile; then
             compile_application
@@ -223,12 +223,12 @@ create_deb_package() {
         fi
     fi
 
-    cp OpenLauncher.bin compile-deb/usr/share/openlauncher/
-    chmod +x compile-deb/usr/share/openlauncher/OpenLauncher.bin
+    cp CommandLauncher.bin compile-deb/usr/share/commandlauncher/
+    chmod +x compile-deb/usr/share/commandlauncher/CommandLauncher.bin
     chmod -R 0755 compile-deb
 
     # Build .deb; use --root-owner-group to avoid owner/group warnings when running as root
-    dpkg-deb --build --root-owner-group compile-deb "OpenLauncher.deb"
+    dpkg-deb --build --root-owner-group compile-deb "CommandLauncher.deb"
     echo -e "${GREEN}Deb package created!${NC}"
 
     # Ask to install the package
@@ -236,10 +236,10 @@ create_deb_package() {
     if [ "$install_choice" == "y" ]; then
         # Use apt to install the local .deb so dependencies declared in control are resolved
         sudo apt update
-        sudo apt install -y ./OpenLauncher.deb
+        sudo apt install -y ./CommandLauncher.deb
     fi
 
-    rm compile-deb/usr/share/openlauncher/OpenLauncher.bin
+    rm compile-deb/usr/share/commandlauncher/CommandLauncher.bin
 }
 
 # Main script logic

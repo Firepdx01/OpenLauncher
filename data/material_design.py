@@ -1,5 +1,5 @@
 """
-Clean Modern Design System for OpenLauncher
+Clean Modern Design System for CommandLauncher
 Minimalist, professional design with subtle animations
 """
 

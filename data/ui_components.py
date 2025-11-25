@@ -1,5 +1,5 @@
 """
-UI Components for OpenLauncher
+UI Components for CommandLauncher
 Contains main window UI, dialogs, and styling
 """
 

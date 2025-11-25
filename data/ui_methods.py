@@ -268,7 +268,7 @@ class UiMethods:
                 'uuid': self.user_uuid,
                 'token': self.access_token,
                 'jvmArguments': arg,
-                'launcherName': "OpenLauncher for Minecraft",
+                'launcherName': "CommandLauncher for Minecraft",
                 'launcherVersion': variables.launcher_version
             }
             

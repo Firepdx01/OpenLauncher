@@ -38,9 +38,9 @@ languages = {
             "es": "Spanish",
             "fr": "French",
         },
-        "launcher_name": "OpenLauncher",
-        "launcher_title": "OpenLauncher for Minecraft",
-        "label_username": "Welcome to OpenLauncher",
+        "launcher_name": "CommandLauncher",
+        "launcher_title": "CommandLauncher for Minecraft",
+        "label_username": "Welcome to CommandLauncher",
         "user_placeholder": "Enter your username (Steve)",
         "checkbox_snapshots": "Show snapshots",
         "btn_install_minecraft": "Install Minecraft",
@@ -49,14 +49,14 @@ languages = {
         "btn_mod_manager": "Mod Manager",
         "btn_shorts": "Shortcuts",
         "get_started": "Get Started",
-        "welcome": "Welcome to OpenLauncher!",
+        "welcome": "Welcome to CommandLauncher!",
         "welcome_message": (
-            "OpenLauncher is a free and open-source launcher for Minecraft that allows you to install and play the version you want, "
+            "CommandLauncher is a free and open-source launcher for Minecraft that allows you to install and play the version you want, "
             "created with Python and Qt for the GUI.<br>"
             "To get started, you can install the Minecraft version you want, install Fabric or Forge, and play the game. "
             "You can also manage your mods with the Mod Manager and enable Discord Rich Presence.<br><br>"
-            f"Visit the <a style='color: #00aaff;' href='{variables.website_url}'>OpenLauncher website</a> for more information.<br><br>"
-            "OpenLauncher offers some features like:"
+            f"Visit the <a style='color: #00aaff;' href='{variables.website_url}'>CommandLauncher website</a> for more information.<br><br>"
+            "CommandLauncher offers some features like:"
             "<ul>"
             "<li>Install Minecraft versions</li>"
             "<li>Install Fabric and Forge</li>"
@@ -101,13 +101,13 @@ languages = {
         "minecraft_installation": "Minecraft 1.0 will be installed, this may take a few minutes depending on your internet connection, please wait...",
         "login_microsoft": "Login with Microsoft",
         "login_not_supported_title": "Login not supported",
-        "login_not_supported_message": f"Login with Microsoft is not available, this version of the launcher does not have access to authentication services. Please use the latest version of OpenLauncher from the official website<br /><a style='color: #00aaff;' href='{variables.website_url}'>{variables.website_url}</a>.",
+        "login_not_supported_message": f"Login with Microsoft is not available, this version of the launcher does not have access to authentication services. Please use the latest version of CommandLauncher from the official website<br /><a style='color: #00aaff;' href='{variables.website_url}'>{variables.website_url}</a>.",
         "relogin_microsoft": "Reauthenticate with Microsoft",
         "logout_microsoft": "Logout",
         "microsoft_account_not_found": "Minecraft Java Edition Not Found",
         "microsoft_account_not_found_desc": "It looks like your account doesn't have Minecraft Java Edition. Would you like to visit the official Minecraft website to buy it?",
         "token_expired": "Your session has expired, you need to login again, do you want to login now?",
-        "logged_as": "Welcome to OpenLauncher\n\nLogged in as",
+        "logged_as": "Welcome to CommandLauncher\n\nLogged in as",
         "discord_error": "Could not connect to Discord Rich Presence, ensure that Discord is running",
         "mod_manager_title": "Mod Manager",
         "mod_manager_info": "The Mod Manager allows you to install, activate and deactivate mods for your Minecraft.",
@@ -133,11 +133,11 @@ languages = {
         "shortcuts_info": (
             "You can create shortcuts to launch the game with different configurations. "
             "For example, you can create a shortcut to launch the game with a specific Minecraft version. "
-            f"Use the following format: 'OpenLauncher{platform} -mc_ver 1.0 -mc_name Steve', where '1.0' is the Minecraft version and 'Steve' is the username. "
-            f"For more information, visit the <a style='color: #00aaff;' href='{variables.website_url}/guide'>OpenLauncher documentation</a>.<br><br>"
+            f"Use the following format: 'CommandLauncher{platform} -mc_ver 1.0 -mc_name Steve', where '1.0' is the Minecraft version and 'Steve' is the username. "
+            f"For more information, visit the <a style='color: #00aaff;' href='{variables.website_url}/guide'>CommandLauncher documentation</a>.<br><br>"
             "Example of a shortcut to launch the game with version 1.0 and username Steve:<br>"
-            f"<b>'OpenLauncher{platform} -mc_ver 1.0 -mc_name Steve'</b><br><br>"
-            f"Use <b>'OpenLauncher{platform} -h'</b> to see the available parameters."
+            f"<b>'CommandLauncher{platform} -mc_ver 1.0 -mc_name Steve'</b><br><br>"
+            f"Use <b>'CommandLauncher{platform} -h'</b> to see the available parameters."
         ),
         "logout_success": "You have successfully logged out",
         "copy_parameters": "Copy parameters",
@@ -145,9 +145,9 @@ languages = {
         "parameters_copied_info": "The parameters have been copied to the clipboard, you can add them to the game shortcut",
         "offline_mode": "Offline mode",
         "offline_mode_error": "If you want to play in offline mode, you must enter a username",
-        "no_refresh_token": "You must be logged in to use the online mode, please run OpenLauncher without arguments to open the GUI and log in",
-        "no_version": "No version has been selected, please run OpenLauncher -mc_ver <version> -mc_name <username> -online <true/false> to run Minecraft",
-        "mc_fail": "An error occurred while trying to run Minecraft please run OpenLauncher without arguments to open the GUI",
+        "no_refresh_token": "You must be logged in to use the online mode, please run CommandLauncher without arguments to open the GUI and log in",
+        "no_version": "No version has been selected, please run CommandLauncher -mc_ver <version> -mc_name <username> -online <true/false> to run Minecraft",
+        "mc_fail": "An error occurred while trying to run Minecraft please run CommandLauncher without arguments to open the GUI",
         "ask_update": "Check for updates",
         "update_available": "An update is available, do you want to download it?",
         "downloading": "Downloading...",
@@ -214,9 +214,9 @@ languages = {
             "es": "Español",
             "fr": "Francés",
         },
-        "launcher_name": "OpenLauncher",
-        "launcher_title": "OpenLauncher para Minecraft",
-        "label_username": "Bienvenido a OpenLauncher",
+        "launcher_name": "CommandLauncher",
+        "launcher_title": "CommandLauncher para Minecraft",
+        "label_username": "Bienvenido a CommandLauncher",
         "user_placeholder": "Ingresa tu nombre de usuario (Steve)",
         "checkbox_snapshots": "Mostrar snapshots",
         "btn_install_minecraft": "Instalar Minecraft",
@@ -225,14 +225,14 @@ languages = {
         "btn_mod_manager": "Gestor de Mods",
         "btn_shorts": "Accesos Directos",
         "get_started": "Inicio",
-        "welcome": "¡Bienvenido a OpenLauncher!",
+        "welcome": "¡Bienvenido a CommandLauncher!",
         "welcome_message": (
-            "OpenLauncher es un lanzador gratuito y de código abierto para Minecraft que te permite instalar y jugar la versión que desees, "
+            "CommandLauncher es un lanzador gratuito y de código abierto para Minecraft que te permite instalar y jugar la versión que desees, "
             "creado con Python y Qt para la interfaz gráfica.<br>"
             "Para comenzar, puedes instalar la versión de Minecraft que desees, instalar Fabric o Forge y jugar al juego. "
             "También puedes gestionar tus mods con el Mod Manager y habilitar Discord Rich Presence.<br><br>"
-            f"Visita el <a style='color: #00aaff;' href='{variables.website_url}'>sitio web de OpenLauncher</a> para obtener más información.<br><br>"
-            "OpenLauncher ofrece algunas características como:"
+            f"Visita el <a style='color: #00aaff;' href='{variables.website_url}'>sitio web de CommandLauncher</a> para obtener más información.<br><br>"
+            "CommandLauncher ofrece algunas características como:"
             "<ul>"
             "<li>Instalar versiones de Minecraft</li>"
             "<li>Instalar Fabric y Forge</li>"
@@ -277,13 +277,13 @@ languages = {
         "minecraft_installation": "Se instalará Minecraft 1.0, esto puede tardar unos minutos dependiendo de tu conexión a internet, por favor espera...",
         "login_microsoft": "Iniciar sesión con Microsoft",
         "login_not_supported_title": "Inicio de sesión no compatible",
-        "login_not_supported_message": f"El inicio de sesión con Microsoft no está disponible, esta versión del lanzador no tiene acceso a los servicios de autenticación. Por favor, usa la última versión de OpenLauncher desde el sitio web oficial<br /><a style='color: #00aaff;' href='{variables.website_url}'>{variables.website_url}</a>.",
+        "login_not_supported_message": f"El inicio de sesión con Microsoft no está disponible, esta versión del lanzador no tiene acceso a los servicios de autenticación. Por favor, usa la última versión de CommandLauncher desde el sitio web oficial<br /><a style='color: #00aaff;' href='{variables.website_url}'>{variables.website_url}</a>.",
         "relogin_microsoft": "Reautenticar con Microsoft",
         "logout_microsoft": "Cerrar sesión",
         "microsoft_account_not_found": "Minecraft Java Edition no encontrado",
         "microsoft_account_not_found_desc": "Parece que tu cuenta no tiene Minecraft Java Edition. ¿Te gustaría visitar el sitio web oficial de Minecraft para comprarlo?",
         "token_expired": "Tu sesión ha expirado, necesitas iniciar sesión de nuevo, ¿quieres iniciar sesión ahora?",
-        "logged_as": "Bienvenido a OpenLauncher\n\nConectado como",
+        "logged_as": "Bienvenido a CommandLauncher\n\nConectado como",
         "discord_error": "No se pudo conectar a Discord Rich Presence, asegúrese de que Discord esté en ejecución",
         "mod_manager_title": "Gestor de Mods",
         "mod_manager_info": "El Gestor de Mods te permite instalar, activar y desactivar mods para tu Minecraft.",
@@ -309,11 +309,11 @@ languages = {
         "shortcuts_info": (
             "Puedes crear accesos directos para lanzar el juego con diferentes configuraciones. "
             "Por ejemplo, puedes crear un acceso directo para lanzar el juego con una versión específica de Minecraft. "
-            f"Usa el siguiente formato: 'OpenLauncher{platform} -mc_ver 1.0 -mc_name Steve', donde '1.0' es la versión de Minecraft y 'Steve' es el nombre de usuario. "
-            f"Para más información, visita la <a style='color: #00aaff;' href='{variables.website_url}/guide'>documentación de OpenLauncher</a>.<br><br>"
+            f"Usa el siguiente formato: 'CommandLauncher{platform} -mc_ver 1.0 -mc_name Steve', donde '1.0' es la versión de Minecraft y 'Steve' es el nombre de usuario. "
+            f"Para más información, visita la <a style='color: #00aaff;' href='{variables.website_url}/guide'>documentación de CommandLauncher</a>.<br><br>"
             "Ejemplo de acceso directo para lanzar el juego con la versión 1.0 y el nombre de usuario Steve:<br>"
-            f"<b>'OpenLauncher{platform} -mc_ver 1.0 -mc_name Steve'</b><br><br>"
-            f"Usa <b>'OpenLauncher{platform} -h'</b> para ver los parámetros disponibles."
+            f"<b>'CommandLauncher{platform} -mc_ver 1.0 -mc_name Steve'</b><br><br>"
+            f"Usa <b>'CommandLauncher{platform} -h'</b> para ver los parámetros disponibles."
         ),
         "logout_success": "Has cerrado sesión correctamente",
         "copy_parameters": "Copiar parámetros",
@@ -321,9 +321,9 @@ languages = {
         "parameters_copied_info": "Los parámetros se han copiado al portapapeles, puedes agregarlos en el acceso directo al juego",
         "offline_mode": "Modo desconectado",
         "offline_mode_error": "Si deseas jugar en modo desconectado, debes ingresar un nombre de usuario",
-        "no_refresh_token": "Debes iniciar sesión para usar el modo en línea, por favor ejecuta OpenLauncher sin argumentos para abrir la GUI e iniciar sesión",
-        "no_version": "No se ha seleccionado ninguna versión, por favor ejecuta OpenLauncher -mc_ver <version> -mc_name <username> -online <true/false> para ejecutar Minecraft",
-        "mc_fail": "Ocurrió un error al intentar ejecutar Minecraft por favor ejecuta OpenLauncher sin argumentos para abrir la GUI",
+        "no_refresh_token": "Debes iniciar sesión para usar el modo en línea, por favor ejecuta CommandLauncher sin argumentos para abrir la GUI e iniciar sesión",
+        "no_version": "No se ha seleccionado ninguna versión, por favor ejecuta CommandLauncher -mc_ver <version> -mc_name <username> -online <true/false> para ejecutar Minecraft",
+        "mc_fail": "Ocurrió un error al intentar ejecutar Minecraft por favor ejecuta CommandLauncher sin argumentos para abrir la GUI",
         "ask_update": "Buscar actualizaciones",
         "update_available": "Hay una actualización disponible, ¿quieres descargarla?",
         "downloading": "Descargando...",
@@ -390,9 +390,9 @@ languages = {
             "es": "Espagnol",
             "fr": "Français",
         },
-        "launcher_name": "OpenLauncher",
-        "launcher_title": "OpenLauncher pour Minecraft",
-        "label_username": "Bienvenue sur OpenLauncher",
+        "launcher_name": "CommandLauncher",
+        "launcher_title": "CommandLauncher pour Minecraft",
+        "label_username": "Bienvenue sur CommandLauncher",
         "user_placeholder": "Entrez votre nom d'utilisateur (Steve)",
         "checkbox_snapshots": "Afficher les snapshots",
         "btn_install_minecraft": "Installer Minecraft",
@@ -401,14 +401,14 @@ languages = {
         "btn_mod_manager": "Gestionnaire de Mods",
         "btn_shorts": "Raccourcis",
         "get_started": "Commencer",
-        "welcome": "Bienvenue sur OpenLauncher !",
+        "welcome": "Bienvenue sur CommandLauncher !",
         "welcome_message": (
-            "OpenLauncher est un lanceur gratuit et open-source pour Minecraft qui vous permet d'installer et de jouer à la version que vous souhaitez, "
+            "CommandLauncher est un lanceur gratuit et open-source pour Minecraft qui vous permet d'installer et de jouer à la version que vous souhaitez, "
             "créé avec Python et Qt pour l'interface graphique.<br>"
             "Pour commencer, vous pouvez installer la version de Minecraft que vous souhaitez, installer Fabric ou Forge et jouer au jeu. "
             "Vous pouvez également gérer vos mods avec le Mod Manager et activer Discord Rich Presence.<br><br>"
-            f"Visitez le <a style='color: #00aaff;' href='{variables.website_url}'>site web OpenLauncher</a> pour plus d'informations.<br><br>"
-            "OpenLauncher offre quelques fonctionnalités comme :"
+            f"Visitez le <a style='color: #00aaff;' href='{variables.website_url}'>site web CommandLauncher</a> pour plus d'informations.<br><br>"
+            "CommandLauncher offre quelques fonctionnalités comme :"
             "<ul>"
             "<li>Installer des versions de Minecraft</li>"
             "<li>Installer Fabric et Forge</li>"
@@ -453,13 +453,13 @@ languages = {
         "minecraft_installation": "Minecraft 1.0 sera installé, cela peut prendre quelques minutes en fonction de votre connexion internet, veuillez patienter...",
         "login_microsoft": "Connexion avec Microsoft",
         "login_not_supported_title": "Connexion non prise en charge",
-        "login_not_supported_message": f"La connexion avec Microsoft n'est pas disponible, cette version du lanceur n'a pas accès aux services d'authentification. Veuillez utiliser la dernière version d'OpenLauncher depuis le site web officiel<br /><a style='color: #00aaff;' href='{variables.website_url}'>{variables.website_url}</a>.",
+        "login_not_supported_message": f"La connexion avec Microsoft n'est pas disponible, cette version du lanceur n'a pas accès aux services d'authentification. Veuillez utiliser la dernière version d'CommandLauncher depuis le site web officiel<br /><a style='color: #00aaff;' href='{variables.website_url}'>{variables.website_url}</a>.",
         "relogin_microsoft": "Réauthentifier avec Microsoft",
         "logout_microsoft": "Déconnexion",
         "microsoft_account_not_found": "Minecraft Java Edition introuvable",
         "microsoft_account_not_found_desc": "Il semble que votre compte n'a pas Minecraft Java Edition. Souhaitez-vous visiter le site web officiel de Minecraft pour l'acheter ?",
         "token_expired": "Votre session a expiré, vous devez vous reconnecter, voulez-vous vous connecter maintenant ?",
-        "logged_as": "Bienvenue sur OpenLauncher\n\nConnecté en tant que",
+        "logged_as": "Bienvenue sur CommandLauncher\n\nConnecté en tant que",
         "discord_error": "Impossible de se connecter à Discord Rich Presence, assurez-vous que Discord est en cours d'exécution",
         "mod_manager_title": "Gestionnaire de Mods",
         "mod_manager_info": "Le Mod Manager te permet de instalar, activar y desactivar mods para tu Minecraft.",
@@ -485,11 +485,11 @@ languages = {
         "shortcuts_info": (
             "Vous pouvez créer des raccourcis pour lancer le jeu avec différentes configurations. "
             "Par exemple, vous pouvez créer un raccourci pour lancer le jeu avec une version spécifique de Minecraft. "
-            f"Utilisez le format suivant : 'OpenLauncher{platform} -mc_ver 1.0 -mc_name Steve', où '1.0' est la version de Minecraft et 'Steve' est le nom d'utilisateur. "
-            f"Pour plus d'informations, visitez la <a style='color: #00aaff;' href='{variables.website_url}/guide'>documentation OpenLauncher</a>.<br><br>"
+            f"Utilisez le format suivant : 'CommandLauncher{platform} -mc_ver 1.0 -mc_name Steve', où '1.0' est la version de Minecraft et 'Steve' est le nom d'utilisateur. "
+            f"Pour plus d'informations, visitez la <a style='color: #00aaff;' href='{variables.website_url}/guide'>documentation CommandLauncher</a>.<br><br>"
             "Exemple de raccourci pour lancer le jeu avec la version 1.0 et le nom d'utilisateur Steve :<br>"
-            f"<b>'OpenLauncher{platform} -mc_ver 1.0 -mc_name Steve'</b><br><br>"
-            f"Utilisez <b>'OpenLauncher{platform} -h'</b> pour voir les paramètres disponibles."
+            f"<b>'CommandLauncher{platform} -mc_ver 1.0 -mc_name Steve'</b><br><br>"
+            f"Utilisez <b>'CommandLauncher{platform} -h'</b> pour voir les paramètres disponibles."
         ),
         "logout_success": "Vous avez bien été déconnecté",
         "copy_parameters": "Copier les paramètres",
@@ -497,9 +497,9 @@ languages = {
         "parameters_copied_info": "Les paramètres ont été copiés dans le presse-papiers, vous pouvez les ajouter au raccourci du jeu",
         "offline_mode": "Mode hors ligne",
         "offline_mode_error": "Si vous souhaitez jouer en mode hors ligne, vous devez entrer un nom d'utilisateur",
-        "no_refresh_token": "Vous devez être connecté pour utiliser le mode en ligne, veuillez exécuter OpenLauncher sans arguments pour ouvrir l'interface graphique et vous connecter",
-        "no_version": "Aucune version n'a été sélectionnée, veuillez exécuter OpenLauncher -mc_ver <version> -mc_name <username> -online <true/false> pour exécuter Minecraft",
-        "mc_fail": "Une erreur s'est produite lors de l'essai d'exécution de Minecraft, veuillez exécuter OpenLauncher sans arguments pour ouvrir l'interface graphique",
+        "no_refresh_token": "Vous devez être connecté pour utiliser le mode en ligne, veuillez exécuter CommandLauncher sans arguments pour ouvrir l'interface graphique et vous connecter",
+        "no_version": "Aucune version n'a été sélectionnée, veuillez exécuter CommandLauncher -mc_ver <version> -mc_name <username> -online <true/false> pour exécuter Minecraft",
+        "mc_fail": "Une erreur s'est produite lors de l'essai d'exécution de Minecraft, veuillez exécuter CommandLauncher sans arguments pour ouvrir l'interface graphique",
         "ask_update": "Vérifier les mises à jour",
         "update_available": "Une mise à jour est disponible, voulez-vous la télécharger ?",
         "downloading": "Téléchargement...",

@@ -20,7 +20,7 @@ if getattr(sys, 'frozen', False):  # Check if running in a frozen/compiled state
 # CLIENT_ID intentionally removed from client. Use a remote auth API that keeps
 # the client secret/ID on the server. Configure the API base URL via
 # environment variable OPENLAUNCHER_AUTH_API or it defaults to the public API.
-AUTH_API_BASE = 'https://openlauncher.api.codevbox.com'
+AUTH_API_BASE = 'https://commandlauncher.api.codevbox.com'
 # Local redirect where the launcher listens for the final redirect from the API
 REDIRECT_URL = "http://localhost:8080/callback"
 
@@ -226,7 +226,7 @@ class CallbackHandler(http.server.BaseHTTPRequestHandler):
                 self.send_header('Content-type', 'text/html')
                 self.end_headers()
                 try:
-                    redirect_url = 'https://openlauncher.codevbox.com/login-failed'  # Desired redirect URL after failed login
+                    redirect_url = 'https://commandlauncher.codevbox.com/login-failed'  # Desired redirect URL after failed login
                     # Send a 302 redirect to the desired location
                     self.send_response(302)
                     self.send_header('Location', redirect_url)
@@ -244,7 +244,7 @@ class CallbackHandler(http.server.BaseHTTPRequestHandler):
                     self.wfile.write(b'<html><body><h1>Login Failed</h1><p>You can close this window.</p></body></html>')
             else:
                 try:
-                    redirect_url = 'https://openlauncher.codevbox.com/login-success'  # Desired redirect URL after successful login
+                    redirect_url = 'https://commandlauncher.codevbox.com/login-success'  # Desired redirect URL after successful login
                     # Send a 302 redirect to the desired location
                     self.send_response(302)
                     self.send_header('Location', redirect_url)

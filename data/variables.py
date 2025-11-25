@@ -15,7 +15,7 @@ except Exception:
     KEYRING_AVAILABLE = False
 
 # Website URL
-website_url = "https://openlauncher.codevbox.com"
+website_url = "https://commandlauncher.codevbox.com"
 
 # Set the default JVM arguments
 # Separate the arguments with a comma ("arg1", "arg2", "arg3")
@@ -107,10 +107,10 @@ steve_head = os.path.join(script_dir, 'img/steve.webp').replace("\\", "/")
 
 # Set app directory
 if sys.platform == "win32":
-    app_directory = os.path.join(os.path.expanduser("~"), "OpenLauncher")
+    app_directory = os.path.join(os.path.expanduser("~"), "CommandLauncher")
     os.makedirs(app_directory, exist_ok=True)
 elif sys.platform == "linux":
-    app_directory = os.path.join(str(pathlib.Path.home()), "OpenLauncher")
+    app_directory = os.path.join(str(pathlib.Path.home()), "CommandLauncher")
     os.makedirs(app_directory, exist_ok=True)
 
 # Set config directory and refresh token file path
@@ -118,7 +118,7 @@ config_dir = os.path.join(app_directory, "config")
 refresh_token_file = os.path.join(config_dir, "refresh_token.json")
 
 
-SERVICE_NAME = "OpenLauncher"
+SERVICE_NAME = "CommandLauncher"
 
 
 def save_refresh_token(token):

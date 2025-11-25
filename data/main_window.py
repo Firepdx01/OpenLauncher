@@ -1,5 +1,5 @@
 """
-Main Window Class for OpenLauncher
+Main Window Class for CommandLauncher
 Combines all UI components and methods
 """
 

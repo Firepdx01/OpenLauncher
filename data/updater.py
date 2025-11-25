@@ -114,7 +114,7 @@ def clean_up():
 def update():
     if not check_network():
         return
-    repo_latest = "https://github.com/CesarGarza55/OpenLauncher/releases/latest"
+    repo_latest = "https://github.com/CesarGarza55/CommandLauncher/releases/latest"
     try:
         update = requests.get(f"{repo_latest}")
         actual_version = version_to_tuple(variables.launcher_version)
@@ -135,7 +135,7 @@ def update():
                 os.makedirs(os.path.join(variables.app_directory, "updates"), exist_ok=True)
                 download_location = os.path.join(variables.app_directory, "updates")
                 if sys.platform == "win32":
-                    url = f"{repo_latest}/download/OpenLauncher.exe"
+                    url = f"{repo_latest}/download/CommandLauncher.exe"
                     dest = f'{download_location}/update.exe'
 
                     progress_window = tk.Toplevel(root)
@@ -159,13 +159,13 @@ def update():
                         os.system(f'start {dest}')
                     sys.exit()
                 elif sys.platform == "linux":
-                    if not shutil.which("openlauncher"):
+                    if not shutil.which("commandlauncher"):
                         dialog = CustomDialog(root, title=lang(current_language, "download_format"))
                         format_choice = dialog.result
                     else:
                         format_choice = "deb"
                     if format_choice == 'bin':
-                        url = f"{repo_latest}/download/OpenLauncher.bin"
+                        url = f"{repo_latest}/download/CommandLauncher.bin"
                         messagebox.showinfo("Download", lang(current_language, "select_folder"))
                         down_location = filedialog.askdirectory()
                         if not down_location:
@@ -173,7 +173,7 @@ def update():
                             sys.exit()
                         dest = f'{down_location}/update.bin'
                     elif format_choice == 'deb':
-                        url = f"{repo_latest}/download/OpenLauncher.deb"
+                        url = f"{repo_latest}/download/CommandLauncher.deb"
                         dest = f'{download_location}/update.deb'
                     else:
                         show_custom_message("Error", lang(current_language, "download_cancelled"), "error")

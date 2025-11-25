@@ -1,5 +1,5 @@
 """
-Resource Cache for OpenLauncher
+Resource Cache for CommandLauncher
 Caches loaded images and pixmaps to improve performance
 """
 

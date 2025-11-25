@@ -1,5 +1,5 @@
 """
-Version Installer for OpenLauncher
+Version Installer for CommandLauncher
 Handles installation of Minecraft versions (Vanilla, Fabric, Forge)
 """
 

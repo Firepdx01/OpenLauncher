@@ -1,5 +1,5 @@
 """
-Discord Rich Presence Manager for OpenLauncher
+Discord Rich Presence Manager for CommandLauncher
 Handles Discord RPC connection and updates
 """
 

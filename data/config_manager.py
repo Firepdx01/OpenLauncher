@@ -1,5 +1,5 @@
 """
-Configuration Manager for OpenLauncher
+Configuration Manager for CommandLauncher
 Handles loading and saving of user configurations
 """
 

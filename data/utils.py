@@ -1,5 +1,5 @@
 """
-Utility functions for OpenLauncher
+Utility functions for CommandLauncher
 Includes directory operations and general helper functions
 """
 

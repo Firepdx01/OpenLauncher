@@ -1,19 +1,19 @@
 ; Basic script
 SetCompressor /SOLID lzma
-Name "OpenLauncher"
+Name "CommandLauncher"
 
 ; Definitions
 !define FILE_DIR "..\output-build"
 Icon "icon.ico"
-OutFile "..\OpenLauncher.exe"
+OutFile "..\CommandLauncher.exe"
 
 ; Include files
 !include "MUI2.nsh"
 !include "LogicLib.nsh"
 
 ; Additional definitions
-!define APPNAME "OpenLauncher"
-!define DESCRIPTION "OpenLauncher is an open-source Minecraft launcher developed in Python using PyQt5 and the minecraft_launcher_lib library."
+!define APPNAME "CommandLauncher"
+!define DESCRIPTION "CommandLauncher is an open-source Minecraft launcher developed in Python using PyQt5 and the minecraft_launcher_lib library."
 !define DEVELOPER "CesarGarza55"
 !define LOGO_ICON_FILE "icon.ico"
 !define LICENSE_TEXT_FILE "LICENSE.txt"
@@ -22,9 +22,9 @@ OutFile "..\OpenLauncher.exe"
 !define VERSIONMINOR 7
 !define VERSIONBUILD 0
 !define BUILDNUMBER 0
-!define HELPURL "https://github.com/CesarGarza55/OpenLauncher"
-!define UPDATEURL "https://github.com/CesarGarza55/OpenLauncher/releases/latest/download/OpenLauncher.exe"
-!define ABOUTURL "https://github.com/CesarGarza55/OpenLauncher"
+!define HELPURL "https://github.com/CesarGarza55/CommandLauncher"
+!define UPDATEURL "https://github.com/CesarGarza55/CommandLauncher/releases/latest/download/CommandLauncher.exe"
+!define ABOUTURL "https://github.com/CesarGarza55/CommandLauncher"
 !define INSTALLSIZE 257396
 
 ; General settings
@@ -78,14 +78,14 @@ Section "install"
   writeUninstaller "$INSTDIR\uninstall.exe"
   SetOutPath $INSTDIR
   CreateDirectory "$SMPROGRAMS\${APPNAME}"
-  CreateShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\OpenLauncher.exe"
+  CreateShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\CommandLauncher.exe"
   CreateShortCut "$SMPROGRAMS\${APPNAME}\uninstall.lnk" "$INSTDIR\uninstall.exe"
-  CreateShortCut "$DESKTOP\${APPNAME}.lnk" "$INSTDIR\OpenLauncher.exe"
+  CreateShortCut "$DESKTOP\${APPNAME}.lnk" "$INSTDIR\CommandLauncher.exe"
   WriteRegStr HKCU "Software\${APPNAME}" "InstallLocation" "$INSTDIR"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayName" "${APPNAME}"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "UninstallString" "$INSTDIR\uninstall.exe"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "QuitUninstallString" "$INSTDIR\uninstall.exe /S"
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayIcon" "$INSTDIR\OpenLauncher.exe"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayIcon" "$INSTDIR\CommandLauncher.exe"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "Publisher" "${DEVELOPER}"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "HelpLink" "${HELPURL}"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "URLUpdateInfo" "${UPDATEURL}"
@@ -122,7 +122,7 @@ Section "uninstall"
   delete "$SMPROGRAMS\${APPNAME}\uninstall.lnk"
   delete "$DESKTOP\${APPNAME}.lnk"
   rmDir "$SMPROGRAMS\${APPNAME}"
-  delete $INSTDIR\OpenLauncher.exe
+  delete $INSTDIR\CommandLauncher.exe
   delete $INSTDIR\icon.ico
   delete $INSTDIR\uninstall.exe
   rmDir /r $INSTDIR\_internal

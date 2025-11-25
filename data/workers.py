@@ -1,5 +1,5 @@
 """
-Workers and Thread classes for OpenLauncher
+Workers and Thread classes for CommandLauncher
 Handles background task execution for Minecraft commands and functions
 """
 

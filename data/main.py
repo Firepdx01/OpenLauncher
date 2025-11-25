@@ -1,5 +1,5 @@
 """
-OpenLauncher - Open Source Minecraft Launcher
+CommandLauncher - Open Source Command Launcher
 Main entry point for the application
 
 Refactored for better maintainability with modular structure

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.7.0
+Type=Application
+Name=CommandLauncher
+Comment=CommandLauncher is an open source command launcher developed in Python
+Exec=commandlauncher
+Icon=commandlauncher
+Terminal=false
+Categories=Utility;

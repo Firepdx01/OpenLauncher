@@ -81,7 +81,7 @@ def run_minecraft(mc_ver, mc_name, jvm_args=None, online=None, mc_dir=None):
             'uuid': user_uuid,
             'token': online,
             'jvmArguments': arg,
-            'launcherName': "OpenLauncher for Minecraft",
+            'launcherName': "CommandLauncher for Minecraft",
             'launcherVersion': variables.launcher_version
         }
 
